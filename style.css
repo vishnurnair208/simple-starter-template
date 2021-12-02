@@ -1,6 +1,136 @@
 *{
-          margin: 0;
+    margin: 0;
           box-sizing: border-box;
-      }
-      /* Your code goes here */
+        }
+html,body,.sidebar{
+    height: 100%;
+}
+body{
+    background-color: #050729;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+body::after{
+    content: "";
+    background-image: url(./assets/images/car-3075497.png);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+
+
+.sidebar{
+    background-color: #0B0B0D80;
+    padding: 20px 10px;
+    text-align: center;
+    display: grid;
+}
+.item-container{
+    display: grid;
+    margin-bottom: -38px;
+}
+#sidebar-footer{
+    /* display: grid; */
+   
+    margin-top: auto;
+    margin-bottom: 0;
+    
+}
+#home{
+    color: #A276FF;
+    
+}
+#item{
+    color: white;
+}
+#foot{
+    color: grey;
+    padding-bottom: 15px;
+   
+    
+}
+#itemd{
+    padding-bottom: 30px ;
+    color: white;
+}
+#itemds{
+    color: white;
+    padding-bottom: 80px;
+}
+.body-container{
+    padding: 50px ;
+    justify-items: start;
+}
+.head{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+h2{
+    color: white;
+}
+h1{
+    color: #A276FF;
+    font-size: 45px;
+}
+p{
+    line-height: 25px;
+    font-size: 17px;
+    color: white;
+
+}
+#learnmore{
+    border-radius: 9px;
+    padding: 10px 50px;
+    background: none;
+    margin: 20px 0;
+    margin-left: 0;
+    border: solid 3px #FFFFFF ;
+    color: white;
+    padding-top: 16px;
+}
+.image-container{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    margin-top: 10px;
+    margin-bottom: 30px;
+    gap: 10px;
+    justify-content: start;
+    
+}
+.image-container img{
+    width: 100%;
+    max-width: 176px;
+}
+#news{
+    font-size: 25px;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 65px;
+}
+#news img{
+    height: 18px;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 800px){
+    .image-container{
+        grid-template-columns: repeat(2,auto);
+    }
+    .body-container{
+        margin: 0;
+        padding: 25px;
+    }
+
+}
+    
+
+
+
       
